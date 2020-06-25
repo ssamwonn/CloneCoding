@@ -1,10 +1,71 @@
-.title {
-    color: blue;
+body {
+    background-color: black;
+    text-align: center;
 }
 
-body {
-    background-color: white;
+h1 {
+    font-size: 1050%;
+    letter-spacing: -5px;
+    color: white;
+    opacity: .85;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 110%;
+    border: none;
+    outline: black;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
     text-align: center;
+    border: none;
+    margin-bottom: 80px;
+}
+
+input::placeholder {
+    color: white;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+.greetings {
+    color: white;
+    font-size: 337.5%;
+    opacity: .85;
+    margin: 20;
+    padding: 0;
+}
+
+.input_text {
+    width: 700px;
+    border-bottom: 3px solid white;
+    margin:0;
+}
+
+.js_toDoList {
+    font-size: 30px;
+    color: white;
+    opacity: .85;
+    font-weight: bold;
+}
+
+.title {
+    color: blue;
 }
 
 .btn {
@@ -15,10 +76,47 @@ clicked {
     color: gray;
 }
 
+.get_clock {
+    font-weight: 500;
+    margin: 0 auto;
+    position: relative;
+}
+
 .form, .greetings {
-    display: none;    
+    display: none;
 }
 
 .showing {
     display: block;
+}
+
+.js_weather {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+    font-size: 150%;
+    font-weight: bolder;
+    padding: 13px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
 }

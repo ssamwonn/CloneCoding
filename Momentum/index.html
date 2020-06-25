@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
-    <title>momomturm</title>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <title>Momenturm</title>
 </head>
 
 <body>
-    <div class="background_img">
+    <span class="js_weather"></span>
         <div class="get_clock">
             <h1 class="clock">00:00</h1>
         </div>
         <form class="js_form form">
-            <input type="text" placeholder="what is your name? " />
+            <input  type="text" placeholder=" what is your name?" />
         </form>
+        <h4 class="js_greetings greetings"></h4>
         <form class="js_toDoForm">
-            <input type="text" placeholder="Write a to do" />
+            <input class="input_text" type="text" placeholder="What is your main focus for today?" />
         </form>
-        <ul class="js_toDoList">
-            <li></li>
-
+        <ul class="js_toDoList">     
         </ul>
-    </div>
-    <h4 class="js-greetings greetings"></h4>
-    <script src="index.js"></script>
+    <script src="clock.js"></script>
     <script src="gretting.js"></script>
-    <script src="todo.js"></script>
+    <script src="todoList.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
 </body>
 
 </html>
