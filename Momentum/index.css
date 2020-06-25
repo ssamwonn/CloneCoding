@@ -1,0 +1,24 @@
+.title {
+    color: blue;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+clicked {
+    color: gray;
+}
+
+.form, .greetings {
+    display: none;    
+}
+
+.showing {
+    display: block;
+}
