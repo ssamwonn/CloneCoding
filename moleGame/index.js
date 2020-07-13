@@ -1,19 +1,20 @@
 
 let start__Btn = document.querySelector('.gameStart_btn');
 let reStart__Btn = document.querySelector('.reStart_btn');
-let holes = document.querySelectorAll('.holes img')
+let holes = document.querySelectorAll('.hole img')
 
 let randomNum;
-let overNum;
+let preNum;
 let count = 0;
 let score = 0;
 let repeatMole;   // 두더지가 다시 나오게 한다 
 
+
 //랜덤 홀 만들기
 function randomHole() {
     randomNum = Math.floor(Math.random() * 8); //소수점으로 떨어지면 안된다,
-    if (overNum !== randomNum) {
-        overNum = randomNum;
+    if (preNum !== randomNum) {
+        preNum = randomNum;
         return randomNum;
     }
     return randomHole();
@@ -38,8 +39,9 @@ gameStart = function () {
     repeatMole = setInterval(fn, 4000);
 }
 
-//게임스타트 
+//게임리스타트 
 start__Btn.addEventListener('click', gameStart);
+
 reStart__Btn.addEventListener('click', function () {
     holes[randomNum].src = './images/hole.jpg ';
     count = 0;
@@ -59,3 +61,4 @@ function hideMole(moleIdx) {
         moleNumber.src = './images/hole.jpg';
     }
 }
+

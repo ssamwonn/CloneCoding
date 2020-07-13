@@ -1,28 +1,55 @@
+span {
+    width: 100px;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+}
+
 button {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin: 4px;
+}
+
+.score__calculator {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.button__gather {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    align-items: center;
 }
 
 .score__calculator h1 {
+    position: absolute;
     width: 30px;
     height: 10px;
 }
 
 .container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
     display: flex;
-    width: 800px;
+    width: 840px;
     height: 800px;
-    background-color: black;
+    background-color: green;
+    border-radius: 50px;
 }
 
 .holes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
     list-style: none;
     cursor: pointer;
 }
 
 .hole img {
+    margin: 0 auto;
     border: 1px solid green;
     border-radius: 30px;
 }
