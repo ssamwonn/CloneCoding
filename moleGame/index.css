@@ -1,0 +1,28 @@
+button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.score__calculator h1 {
+    width: 30px;
+    height: 10px;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 800px;
+    background-color: black;
+}
+
+.holes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    cursor: pointer;
+}
+
+.hole img {
+    border: 1px solid green;
+    border-radius: 30px;
+}
